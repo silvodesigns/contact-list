@@ -11,7 +11,7 @@ class ListContacts extends Component {
                             <p>{contact.name}</p>
                             <p>{contact.email}</p>
                         </div>
-                        <a href="#" className='contact-remove'>Remove</a>
+                        <a href="#"  onClick={()=> this.props.onDeleteContact(contact)} className='contact-remove'>Remove</a>
                   
                 </li>
                 ))}
